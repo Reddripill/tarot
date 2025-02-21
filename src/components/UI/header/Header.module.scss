@@ -1,0 +1,70 @@
+.header {
+   @apply h-20 w-full;
+}
+.wrapper {
+   @apply fixed top-0 left-0 w-full h-20 z-[20];
+}
+.content {
+   @apply flex items-center justify-between h-full
+   gap-x-10;
+}
+
+.logo {
+   @apply font-bold text-3xl uppercase text-accent;
+}
+.nav {
+   @apply md:flex-grow md:flex md:justify-center;
+}
+.menu {
+   @apply flex md:flex-wrap items-center md:gap-x-10 md:gap-y-1;
+}
+.menu-item {
+   @apply leading-6 font-medium text-accent
+   cursor-pointer;
+}
+
+.burger {
+   @apply relative h-5 w-8 md:hidden z-[25] cursor-pointer;
+}
+.burger::after,
+.burger::before,
+.burger > span {
+   @apply absolute content-[''] left-0 w-full h-[2px]
+   bg-black transition-all;
+}
+.burger::before {
+   @apply top-0;
+}
+.burger::after {
+   @apply bottom-0;
+}
+.burger > span {
+   @apply top-[calc(50%-1px)];
+}
+.burger._open {
+   & > span {
+      @apply scale-0;
+   }
+   &.burger::before {
+      @apply top-[calc(50%-1px)] rotate-45;
+   }
+   &.burger::after {
+      @apply top-[calc(50%-1px)] -rotate-45;
+   }
+}
+
+@media (max-width: 767px) {
+   .nav {
+      @apply fixed top-0 -left-full z-[15] w-full h-full
+      transition-all;
+   }
+   .nav._open {
+      @apply left-0;
+   }
+   .menu {
+      @apply flex-col justify-center items-center h-full w-full;
+   }
+   .actions {
+      @apply flex items-center gap-x-4;
+   }
+}

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+   @apply h-full w-full font-inter;
+}
+.wrapper {
+   @apply flex flex-col h-full w-full;
+}
+.container {
+   @apply max-w-container px-container h-full mx-auto;
+}
+.main {
+   @apply flex-grow;
+}
