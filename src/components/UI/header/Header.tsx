@@ -1,15 +1,23 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import Button from "../button/Button";
 import styles from "./Header.module.scss";
 import cn from "classnames";
+import { useIntersectionObs } from "@/hooks/useIntersectionObs";
 
 const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
+   const headerRef = useRef<HTMLDivElement>(null);
+   const isIntersecting = useIntersectionObs(headerRef);
    return (
-      <header className={styles.header}>
-         <div className={styles.wrapper}>
+      <header className={styles.header} ref={headerRef}>
+         <div
+            className={cn(styles.wrapper, {
+               [styles["_label"]]: !isIntersecting,
+               [styles["_open"]]: isOpen,
+            })}
+         >
             <div className="container">
                <div className={styles.content}>
                   <Link href="/" className={styles.logo}>
@@ -28,7 +36,9 @@ const Header = () => {
                      </ul>
                   </nav>
                   <div className={styles.actions}>
-                     <Button>Записаться</Button>
+                     <div className={styles.button}>
+                        <Button>Записаться</Button>
+                     </div>
                      <div
                         className={cn(styles.burger, {
                            [styles["_open"]]: isOpen,

@@ -1,3 +1,9 @@
+import Main from "@/page/main/Main";
+
 export default function Home() {
-   return <div>Hello Tarot Project</div>;
+   return (
+      <>
+         <Main />
+      </>
+   );
 }

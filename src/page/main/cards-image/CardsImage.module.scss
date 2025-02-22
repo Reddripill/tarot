@@ -1,0 +1,13 @@
+.img {
+   @apply relative basis-[450px] hidden md:block;
+}
+.img-wrapper {
+   @apply pb-[73%];
+   & img {
+      @apply absolute top-0 left-0 w-full h-full z-[3];
+   }
+}
+.gradient {
+   @apply absolute -top-1/2 -left-1/2 w-[200%] h-[200%] z-[2]
+   bg-[radial-gradient(ellipse_closest-side,_#4727D8_0%,_rgba(0,0,0,0)_100%)];
+}
