@@ -1,4 +1,5 @@
 import About from "@/page/about/About";
+import Actions from "@/page/actions/Actions";
 import Main from "@/page/main/Main";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
       <>
          <Main />
          <About />
+         <Actions />
       </>
    );
 }

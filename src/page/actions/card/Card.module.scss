@@ -1,0 +1,21 @@
+.card {
+   @apply py-6 px-6 bg-gradient-to-b from-[rgba(129,106,241,0.3)] h-full
+   via-[rgba(55,37,141,0.65)] via-50% to-[#120D2F] rounded-[15px]
+   shadow-[0px_10px_36px_0px_rgba(0,0,0,0.16),0px_0px_1px_0px_rgba(0,0,0,0.6)]
+   max-w-[350px] justify-self-center;
+}
+.image {
+   @apply mb-8;
+   & img {
+      @apply mx-auto;
+   }
+}
+.content {
+   @apply text-accent;
+}
+.title {
+   @apply font-bold md:text-xl text-lg md:mb-2 mb-1;
+}
+.text {
+   @apply md:text-lg text-base;
+}
