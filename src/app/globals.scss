@@ -5,7 +5,7 @@
 html,
 body {
    @apply h-full w-full font-inter text-white
-   overflow-x-hidden;
+   overflow-x-hidden bg-main;
 }
 .wrapper {
    @apply flex flex-col h-full w-full;
@@ -18,8 +18,8 @@ body {
 }
 
 h2 {
-   @apply lg:text-4xl text-3xl leading-normal font-medium;
+   @apply md:text-4xl text-2xl leading-normal font-medium;
 }
 h4 {
-   @apply lg:text-xl text-base leading-8 font-medium;
+   @apply md:text-xl text-base leading-8 font-medium;
 }

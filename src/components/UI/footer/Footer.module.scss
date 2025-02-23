@@ -1,0 +1,57 @@
+.footer {
+   @apply md:pt-28 pt-16;
+}
+
+.info {
+   @apply text-center pb-12 border-b border-accent/80;
+}
+.subtitle {
+   @apply uppercase md:tracking-widest tracking-wide md:text-sm text-xs
+   font-extralight md:mb-5 mb-3;
+}
+.title {
+   @apply md:mb-8 mb-4;
+}
+.button {
+   @apply md:my-12 my-6;
+}
+.brand {
+   @apply tracking-widest md:text-sm text-xs
+   font-extralight;
+}
+
+.refs {
+   @apply flex md:items-center md:justify-between md:gap-x-10
+   md:py-12 py-6;
+}
+/* .refs-navigation {
+   @apply md:flex items-center justify-between grow max-md:mb-8;
+} */
+.logo {
+   @apply font-bold text-3xl uppercase text-accent;
+}
+.nav {
+   @apply md:flex-grow flex justify-center md:-mr-5;
+}
+.menu {
+   @apply flex flex-wrap items-center gap-x-10 gap-y-2;
+}
+.menu-item {
+   @apply leading-6 font-medium text-accent
+   cursor-pointer;
+}
+.links {
+   @apply flex items-center gap-x-8;
+}
+
+@media (max-width: 767px) {
+   .refs {
+      @apply flex-col gap-y-8 items-center;
+   }
+   .menu {
+      @apply flex-col;
+   }
+   .menu-item {
+      @apply text-lg;
+   }
+}
