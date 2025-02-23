@@ -16,9 +16,21 @@ body {
 .main {
    @apply flex-grow;
 }
+.section {
+   @apply md:py-20 py-10;
+}
+.title {
+   @apply font-bold md:pb-14 pb-7;
+}
 
+h1 {
+   @apply text-5xl leading-normal font-medium;
+}
 h2 {
    @apply md:text-4xl text-2xl leading-normal font-medium;
+}
+h3 {
+   @apply md:text-2xl text-xl leading-8 font-medium;
 }
 h4 {
    @apply md:text-xl text-base leading-8 font-medium;
