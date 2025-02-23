@@ -35,3 +35,22 @@ h3 {
 h4 {
    @apply md:text-xl text-base leading-8 font-medium;
 }
+
+.swiper {
+   @apply overflow-visible #{!important};
+}
+.swiper-wrapper {
+   @apply items-center overflow-visible #{!important};
+}
+.swiper-slide {
+   @apply transition-all #{!important};
+}
+.swiper-slide-prev {
+   @apply -translate-x-3 #{!important};
+}
+.swiper-slide-next {
+   @apply translate-x-3 #{!important};
+}
+.swiper-slide-active {
+   @apply scale-110 #{!important};
+}

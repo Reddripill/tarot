@@ -1,0 +1,48 @@
+.info {
+   @apply text-center;
+}
+.title {
+   @apply mb-6;
+}
+.text {
+   @apply uppercase md:tracking-widest tracking-wide md:text-sm text-xs
+   font-extralight mb-24;
+}
+
+.slide-item {
+   @apply h-full px-8 py-6 rounded-lg bg-gradient-to-b from-[rgba(129,106,241,0.3)]
+   via-[rgba(55,37,141,0.65)] via-50% to-[#120D2F]
+   shadow-[0px_10px_36px_0px_rgba(0,0,0,0.16),0px_0px_1px_0px_rgba(0,0,0,0.6)];
+}
+.slide-top {
+   @apply flex items-start gap-x-5 mb-6;
+}
+.avatar {
+   @apply size-[55px] rounded-full bg-white/80;
+}
+.name {
+   @apply pb-[6px];
+}
+.slide-content {
+   @apply text-accent leading-normal;
+}
+
+.slider {
+   @apply mb-24 max-w-[1440px] mx-auto;
+}
+.navigation {
+   @apply flex items-center justify-center gap-x-8;
+}
+.arrow {
+   @apply cursor-pointer border border-accent rounded-full
+   flex items-center justify-center p-2 transition-colors;
+   &:hover {
+      @apply bg-accent;
+      & > svg {
+         @apply text-black;
+      }
+   }
+   & > svg {
+      @apply text-accent transition-colors;
+   }
+}
