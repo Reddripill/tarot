@@ -38,7 +38,7 @@
 }
 .menu-item {
    @apply leading-6 font-medium text-accent
-   cursor-pointer;
+   cursor-pointer transition-all hover:underline;
 }
 .links {
    @apply flex items-center gap-x-8;

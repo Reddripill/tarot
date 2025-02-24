@@ -20,7 +20,7 @@ const Footer = () => {
                   is developing a unique.
                </h5>
                <div className={styles.button}>
-                  <Button>Записаться на расклад</Button>
+                  <Button isLarge={true}>Записаться на расклад</Button>
                </div>
                <h5 className={styles.brand}>Designed by TechGen Inc.</h5>
             </div>

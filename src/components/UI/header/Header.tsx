@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Button from "../button/Button";
 import styles from "./Header.module.scss";
@@ -9,10 +9,22 @@ import { useIntersectionObs } from "@/hooks/useIntersectionObs";
 const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
    const headerRef = useRef<HTMLDivElement>(null);
+   const wrapperRef = useRef<HTMLDivElement>(null);
    const isIntersecting = useIntersectionObs(headerRef);
+   useEffect(() => {
+      if (isOpen) {
+         document.body.classList.add("_lock-scroll");
+      } else {
+         document.body.classList.remove("_lock-scroll");
+      }
+      return () => {
+         document.body.classList.remove("_lock-scroll");
+      };
+   }, [isOpen]);
    return (
       <header className={styles.header} ref={headerRef}>
          <div
+            ref={wrapperRef}
             className={cn(styles.wrapper, {
                [styles["_label"]]: !isIntersecting,
                [styles["_open"]]: isOpen,

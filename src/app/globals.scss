@@ -7,6 +7,9 @@ body {
    @apply h-full w-full font-inter text-white
    overflow-x-hidden bg-main;
 }
+body._lock-scroll {
+   @apply overflow-hidden;
+}
 .wrapper {
    @apply flex flex-col h-full w-full;
 }

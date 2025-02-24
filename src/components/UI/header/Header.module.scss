@@ -2,7 +2,7 @@
    @apply min-h-14 w-full;
 }
 .wrapper {
-   @apply fixed top-0 left-0 w-full h-28 z-[20];
+   @apply fixed top-0 left-0 right-0 w-full h-28 z-[20];
 }
 .content {
    @apply flex items-center justify-between h-full
@@ -20,7 +20,7 @@
 }
 .menu-item {
    @apply leading-6 font-medium text-accent
-   cursor-pointer;
+   cursor-pointer transition-all hover:underline;
 }
 .button {
    @apply relative z-[25] hidden sm:block;
@@ -58,10 +58,10 @@
 
 @media (max-width: 767px) {
    .wrapper {
-      @apply bg-main h-20;
+      @apply bg-main h-20 shadow-header;
    }
    .wrapper::before {
-      @apply content-[""] fixed w-full top-0
+      @apply content-[""] fixed w-full top-0 shadow-header
       -left-full h-20 z-[25] transition-all bg-main;
    }
    .wrapper._open::before {
@@ -91,6 +91,6 @@
       @apply transition-colors;
    }
    .wrapper._label {
-      @apply bg-main h-20;
+      @apply bg-main h-20 shadow-header;
    }
 }
