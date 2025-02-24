@@ -46,11 +46,17 @@ h4 {
    @apply transition-all #{!important};
 }
 .swiper-slide-prev {
-   @apply -translate-x-3 #{!important};
+   @apply xl:-translate-x-3 lg:-translate-x-2
+   md:-translate-x-4 sm:-translate-x-3 -translate-x-1 #{!important};
 }
 .swiper-slide-next {
-   @apply translate-x-3 #{!important};
+   @apply xl:translate-x-3 lg:translate-x-2
+   md:translate-x-4 sm:translate-x-3 translate-x-1 #{!important};
 }
 .swiper-slide-active {
-   @apply scale-110 #{!important};
+   @apply scale-110  #{!important};
+}
+
+.swiper-button-disabled {
+   @apply opacity-50;
 }

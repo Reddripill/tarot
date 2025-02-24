@@ -1,3 +1,6 @@
 .stars {
    @apply flex items-center gap-x-[2px];
 }
+.star {
+   @apply relative md:size-[14px] size-3;
+}

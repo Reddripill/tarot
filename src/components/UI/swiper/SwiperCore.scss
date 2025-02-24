@@ -1,0 +1,20 @@
+.arrow-cust {
+   @apply md:mt-24 mt-12 cursor-pointer border border-accent
+   rounded-full select-none flex items-center justify-center
+   p-2 transition-colors pointer-events-auto;
+   &:hover {
+      @apply bg-accent;
+      & > svg {
+         @apply text-black;
+      }
+   }
+   & > svg {
+      @apply text-accent transition-colors;
+   }
+}
+.arrow-cust > svg {
+   @apply sm:size-8 size-6;
+}
+.swiper-button-disabled {
+   @apply opacity-70 pointer-events-none;
+}

@@ -14,7 +14,6 @@ export const useIntersectionObs = (
       };
       const observer = new IntersectionObserver((entries) => {
          setIsIntersecting(entries[0].isIntersecting);
-         console.log(entries[0]);
       }, configObserver);
       if (target) observer.observe(target);
       return () => {

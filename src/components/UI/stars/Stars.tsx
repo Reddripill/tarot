@@ -7,12 +7,7 @@ const Stars = () => {
       <div className={styles.stars}>
          {[...Array(5)].map((_, index) => (
             <div className={styles.star} key={index}>
-               <Image
-                  src="/svg/star.svg"
-                  width={16}
-                  height={16}
-                  alt={`${index} star`}
-               />
+               <Image src="/svg/star.svg" fill alt={`${index} star`} />
             </div>
          ))}
       </div>
