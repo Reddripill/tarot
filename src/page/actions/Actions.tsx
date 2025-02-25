@@ -2,10 +2,11 @@ import React from "react";
 import { actionCards } from "@/constants/actions";
 import Card from "./card/Card";
 import styles from "./Actions.module.scss";
+import { sectionHashes } from "@/constants/sectionHashes";
 
 const Actions = () => {
    return (
-      <section className="section">
+      <section className="section" id={`${sectionHashes.actions}`}>
          <div className="container">
             <h2 className="title">Сферы деятельности</h2>
             <div className={styles.cards}>

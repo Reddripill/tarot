@@ -3,6 +3,7 @@ import styles from "./Footer.module.scss";
 import Button from "../button/Button";
 import Link from "next/link";
 import Image from "next/image";
+import SmoothScrollLink from "../smooth-scroll-link/SmoothScrollLink";
 
 const Footer = () => {
    return (
@@ -30,10 +31,24 @@ const Footer = () => {
                </Link>
                <nav className={styles.nav}>
                   <ul className={styles.menu}>
-                     <li className={styles["menu-item"]}>Главная</li>
-                     <li className={styles["menu-item"]}>Услуги</li>
-                     <li className={styles["menu-item"]}>Отзывы</li>
-                     <li className={styles["menu-item"]}>Контакты</li>
+                     <li className={styles["menu-item"]}>
+                        <SmoothScrollLink hash="home">Главная</SmoothScrollLink>
+                     </li>
+                     <li className={styles["menu-item"]}>
+                        <SmoothScrollLink hash="actions">
+                           Услуги
+                        </SmoothScrollLink>
+                     </li>
+                     <li className={styles["menu-item"]}>
+                        <SmoothScrollLink hash="reviews">
+                           Отзывы
+                        </SmoothScrollLink>
+                     </li>
+                     <li className={styles["menu-item"]}>
+                        <SmoothScrollLink hash="contacts">
+                           Контакты
+                        </SmoothScrollLink>
+                     </li>
                   </ul>
                </nav>
                <div className={styles.links}>

@@ -5,6 +5,7 @@ import Button from "../button/Button";
 import styles from "./Header.module.scss";
 import cn from "classnames";
 import { useIntersectionObs } from "@/hooks/useIntersectionObs";
+import SmoothScrollLink from "../smooth-scroll-link/SmoothScrollLink";
 
 const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,9 @@ const Header = () => {
          document.body.classList.remove("_lock-scroll");
       };
    }, [isOpen]);
+   const closeMenu = () => {
+      if (isOpen) setIsOpen(false);
+   };
    return (
       <header className={styles.header} ref={headerRef}>
          <div
@@ -41,10 +45,35 @@ const Header = () => {
                      })}
                   >
                      <ul className={styles.menu}>
-                        <li className={styles["menu-item"]}>Главная</li>
-                        <li className={styles["menu-item"]}>Услуги</li>
-                        <li className={styles["menu-item"]}>Отзывы</li>
-                        <li className={styles["menu-item"]}>Контакты</li>
+                        <li className={styles["menu-item"]}>
+                           <SmoothScrollLink hash="home" closeMenu={closeMenu}>
+                              Главная
+                           </SmoothScrollLink>
+                        </li>
+                        <li className={styles["menu-item"]}>
+                           <SmoothScrollLink
+                              hash="actions"
+                              closeMenu={closeMenu}
+                           >
+                              Услуги
+                           </SmoothScrollLink>
+                        </li>
+                        <li className={styles["menu-item"]}>
+                           <SmoothScrollLink
+                              hash="reviews"
+                              closeMenu={closeMenu}
+                           >
+                              Отзывы
+                           </SmoothScrollLink>
+                        </li>
+                        <li className={styles["menu-item"]}>
+                           <SmoothScrollLink
+                              hash="contacts"
+                              closeMenu={closeMenu}
+                           >
+                              Контакты
+                           </SmoothScrollLink>
+                        </li>
                      </ul>
                   </nav>
                   <div className={styles.actions}>

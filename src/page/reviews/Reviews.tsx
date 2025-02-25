@@ -5,10 +5,11 @@ import SwiperSlider from "@/components/UI/swiper/SwiperSlider";
 import { reviewsList } from "@/constants/reviews";
 import { SwiperSlide } from "swiper/react";
 import Stars from "@/components/UI/stars/Stars";
+import { sectionHashes } from "@/constants/sectionHashes";
 
 const Reviews = () => {
    return (
-      <section className="section">
+      <section className="section" id={`${sectionHashes.reviews}`}>
          <div className={styles.info}>
             <h2 className={styles.title}>Что говорят обо мне мои клиенты</h2>
             <div className={styles.text}>
