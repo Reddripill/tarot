@@ -9,6 +9,9 @@
    font-extralight mb-24;
 }
 
+.wrapper {
+   @apply relative;
+}
 .slide-item {
    @apply h-full xl:px-8 sm:px-5 px-3 xl:py-6 py-5 rounded-lg bg-gradient-to-b from-[rgba(129,106,241,0.3)]
    via-[rgba(55,37,141,0.65)] via-50% to-[#120D2F]
@@ -26,4 +29,16 @@
 .slide-content {
    @apply text-accent sm:leading-normal xl:text-base sm:text-sm
    text-xs;
+}
+@media (min-width: 768px) {
+   .overlay {
+      @apply absolute h-full z-[4] top-0
+      from-[#1C153E] via-[rgba(28,21,62,0.7)] via-50% to-[rgba(28,21,62,0)];
+   }
+   .overlay-left {
+      @apply left-0 bg-gradient-to-r w-[20%];
+   }
+   .overlay-right {
+      @apply right-0 bg-gradient-to-l w-[30%];
+   }
 }

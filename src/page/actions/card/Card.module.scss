@@ -2,10 +2,10 @@
    @apply py-6 px-6 bg-gradient-to-b from-[rgba(129,106,241,0.3)] h-full
    via-[rgba(55,37,141,0.65)] via-50% to-[#120D2F] rounded-[15px]
    shadow-[0px_10px_36px_0px_rgba(0,0,0,0.16),0px_0px_1px_0px_rgba(0,0,0,0.6)]
-   max-w-[350px] justify-self-center;
+   max-w-[320px] justify-self-center;
 }
 .image {
-   @apply mb-8;
+   @apply md:mb-8 mb-4;
    & img {
       @apply mx-auto;
    }
@@ -18,4 +18,7 @@
 }
 .text {
    @apply md:text-lg text-base;
+}
+.icon {
+   @apply max-md:size-20;
 }

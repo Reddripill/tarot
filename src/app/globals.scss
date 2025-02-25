@@ -46,7 +46,7 @@ h4 {
    @apply items-center overflow-visible #{!important};
 }
 .swiper-slide {
-   @apply transition-all #{!important};
+   @apply transition-all self-stretch h-auto #{!important};
 }
 .swiper-slide-prev {
    @apply xl:-translate-x-3 lg:-translate-x-2

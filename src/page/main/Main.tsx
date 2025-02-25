@@ -32,7 +32,7 @@ const Main = () => {
             alt="Cosmos Pic"
             fill
             priority
-            style={{ objectFit: "cover" }}
+            className={styles["main-bg"]}
          />
          <div className={styles.overlay} />
       </div>

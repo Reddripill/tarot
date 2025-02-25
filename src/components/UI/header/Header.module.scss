@@ -1,5 +1,5 @@
 .header {
-   @apply min-h-14 w-full;
+   @apply md:min-h-20 min-h-14 w-full;
 }
 .wrapper {
    @apply fixed top-0 left-0 right-0 w-full h-28 z-[20];
@@ -10,7 +10,7 @@
 }
 
 .logo {
-   @apply relative z-[25] font-bold text-3xl uppercase text-accent;
+   @apply relative z-[25] font-bold md:text-3xl text-2xl uppercase text-accent;
 }
 .nav {
    @apply md:flex-grow md:flex md:justify-center;
@@ -58,11 +58,11 @@
 
 @media (max-width: 767px) {
    .wrapper {
-      @apply bg-main h-20 shadow-header;
+      @apply bg-main h-14 shadow-header;
    }
    .wrapper::before {
       @apply content-[""] fixed w-full top-0 shadow-header
-      -left-full h-20 z-[25] transition-all bg-main;
+      -left-full h-14 z-[25] transition-all bg-main;
    }
    .wrapper._open::before {
       @apply left-0;

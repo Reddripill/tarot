@@ -16,11 +16,10 @@ const SwiperSlider = ({ children }: IProps) => {
    return (
       <div className={styles.slider}>
          <Swiper
-            /* spaceBetween={40}
-            slidesPerView={2.5} */
             initialSlide={1}
             centeredSlides={true}
-            loop={false}
+            autoHeight={false}
+            loop={true}
             modules={[Navigation]}
             navigation={{
                prevEl: ".prev-arrow-cust",
