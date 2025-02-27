@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+   outline: 1px solid red; /* Подсветит все элементы для проверки */
+}
 html,
 body {
    @apply h-full w-full font-inter text-white bg-main
-   overflow-x-hidden;
+   overflow-x-hidden max-w-full;
 }
 .wrapper {
    @apply flex flex-col h-full w-full;
