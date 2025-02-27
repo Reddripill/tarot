@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Exo_2 } from "next/font/google";
+import { Inter } from "next/font/google";
 import Header from "@/components/UI/header/Header";
 import Footer from "@/components/UI/footer/Footer";
 import "./globals.scss";
@@ -12,14 +12,6 @@ export const metadata: Metadata = {
 const inter = Inter({
    subsets: ["cyrillic"],
    display: "swap",
-   variable: "--font-inter",
-});
-
-const exo2 = Exo_2({
-   subsets: ["cyrillic"],
-   weight: "400",
-   display: "swap",
-   variable: "--font-exo",
 });
 
 export default function RootLayout({
@@ -28,7 +20,7 @@ export default function RootLayout({
    children: React.ReactNode;
 }>) {
    return (
-      <html lang="ru" className={`${inter.variable} ${exo2.variable}`}>
+      <html lang="ru" className={`${inter.className}`}>
          <body>
             <div className="wrapper">
                <Header />

@@ -1,7 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export const useMatchMedia = (query: string, initialValue: boolean = false) => {
+export const useMatchMedia = (
+   query: string = "(max-width: 768px)",
+   initialValue: boolean = false
+) => {
    const [isMatching, setIsMatching] = useState(initialValue);
    useEffect(() => {
       const watcher = window.matchMedia(query);
