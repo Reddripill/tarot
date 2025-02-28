@@ -9,7 +9,7 @@
 html,
 body {
    @apply h-full w-full font-inter text-white bg-main
-   max-w-full;
+   overflow-x-hidden max-w-full;
 }
 .wrapper {
    @apply flex flex-col h-full w-full overflow-x-hidden;

@@ -12,9 +12,6 @@
 .wrapper {
    @apply relative max-w-[1440px] mx-auto overflow-x-hidden;
 }
-.content {
-   @apply w-full overflow-hidden;
-}
 .slide-item {
    @apply h-full xl:px-8 sm:px-5 px-3 xl:py-6 py-5 rounded-lg bg-gradient-to-b from-[rgba(129,106,241,0.3)]
    via-[rgba(55,37,141,0.65)] via-50% to-[#120D2F]
