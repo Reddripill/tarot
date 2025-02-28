@@ -5,7 +5,7 @@ import cn from "classnames";
 
 const About = () => {
    return (
-      <section className="section">
+      <section className={cn(styles.wrapper, "section")}>
          <div className="container">
             <h2 className={cn(styles.title, "title")}>Обо мне</h2>
             <div className={styles.content}>

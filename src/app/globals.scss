@@ -9,10 +9,10 @@
 html,
 body {
    @apply h-full w-full font-inter text-white bg-main
-   overflow-x-hidden max-w-full;
+   max-w-full;
 }
 .wrapper {
-   @apply flex flex-col h-full w-full;
+   @apply flex flex-col h-full w-full overflow-x-hidden;
 }
 .container {
    @apply max-w-container px-container h-full mx-auto;

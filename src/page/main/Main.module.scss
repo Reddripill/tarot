@@ -1,5 +1,5 @@
 .wrapper {
-   @apply relative pt-20 -mt-28;
+   @apply relative pt-20 -mt-28 overflow-x-hidden;
 }
 .content {
    @apply relative z-[5] md:flex md:items-start md:justify-between

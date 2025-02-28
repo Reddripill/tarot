@@ -10,7 +10,7 @@
 }
 
 .wrapper {
-   @apply relative max-w-[1440px] mx-auto overflow-hidden;
+   @apply relative max-w-[1440px] mx-auto overflow-x-hidden;
 }
 .content {
    @apply w-full overflow-hidden;

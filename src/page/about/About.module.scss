@@ -1,3 +1,6 @@
+/* .wrapper {
+   @apply overflow-y-visible overflow-x-hidden #{!important};
+} */
 .content {
    @apply flex items-start justify-between
    gap-x-20;
