@@ -17,8 +17,8 @@ const Footer = () => {
                   Получите глубокий разбор вашей ситуации
                </h2>
                <h5 className={styles.text}>
-                  Lift Media, LLC is a clinical stage healthcare company which
-                  is developing a unique.
+                  Таро – это ключ к осознанию вашей судьбы. Помогу разобраться в
+                  жизненных вопросах, найти ответы и выбрать верный путь.
                </h5>
                <div className={styles.button}>
                   <Button isLarge={true}>Записаться на расклад</Button>

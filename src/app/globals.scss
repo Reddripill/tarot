@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-   outline: 1px red solid;
-} */
-
 html,
 body {
    @apply h-full w-full font-inter text-white bg-main
-   overflow-x-hidden max-w-full;
+   overflow-x-hidden;
+}
+body._lock-scroll {
+   @apply overflow-hidden;
 }
 .wrapper {
-   @apply flex flex-col h-full w-full overflow-x-hidden;
+   @apply flex flex-col h-full w-full;
 }
 .container {
    @apply max-w-container px-container h-full mx-auto;
