@@ -1,3 +1,6 @@
+.swiper {
+   @apply w-full overflow-hidden;
+}
 .arrow-cust {
    @apply md:mt-24 mt-12 cursor-pointer border border-accent
    rounded-full select-none flex items-center justify-center
