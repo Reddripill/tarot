@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* * {
+   outline: 1px red solid;
+} */
+
 html,
 body {
    @apply h-full w-full font-inter text-white bg-main
