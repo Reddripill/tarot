@@ -5,13 +5,13 @@
 html,
 body {
    @apply h-full w-full font-inter text-white bg-main
-   overflow-x-hidden;
+   overflow-x-hidden max-w-full;
 }
 body._lock-scroll {
    @apply overflow-hidden;
 }
 .wrapper {
-   @apply flex flex-col h-full w-full;
+   @apply flex flex-col min-h-full w-full max-w-full overflow-x-hidden;
 }
 .container {
    @apply max-w-container px-container h-full mx-auto;
