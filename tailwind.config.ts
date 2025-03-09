@@ -14,7 +14,6 @@ export default {
          },
          fontFamily: {
             inter: "var(--font-inter)",
-            exo: "var(--font-exo)",
          },
          maxWidth: {
             container: "1310px",

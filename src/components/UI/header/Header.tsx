@@ -6,6 +6,7 @@ import styles from "./Header.module.scss";
 import cn from "classnames";
 import { useIntersectionObs } from "@/hooks/useIntersectionObs";
 import SmoothScrollLink from "../smooth-scroll-link/SmoothScrollLink";
+import { links } from "@/constants/links";
 
 const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +79,9 @@ const Header = () => {
                   </nav>
                   <div className={styles.actions}>
                      <div className={styles.button}>
-                        <Button>Записаться</Button>
+                        <Link href={links.tgChannel}>
+                           <Button>Записаться</Button>
+                        </Link>
                      </div>
                      <div
                         className={cn(styles.burger, {

@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "./Main.module.scss";
 import { MoveRight } from "lucide-react";
 import CardsImage from "./cards-image/CardsImage";
+import Link from "next/link";
+import { links } from "@/constants/links";
 
 const Main = () => {
    return (
@@ -17,12 +19,14 @@ const Main = () => {
                      Таро – инструмент диагностики и путеводитель на вашем
                      жизненном пути.
                   </h4>
-                  <button type="button" className={styles.button}>
-                     <div className={styles["button-text"]}>Записаться</div>
-                     <div className={styles["button-icon"]}>
-                        <MoveRight />
-                     </div>
-                  </button>
+                  <Link href={links.tgChannel}>
+                     <button type="button" className={styles.button}>
+                        <div className={styles["button-text"]}>Записаться</div>
+                        <div className={styles["button-icon"]}>
+                           <MoveRight />
+                        </div>
+                     </button>
+                  </Link>
                </div>
                <CardsImage />
             </div>

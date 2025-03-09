@@ -5,8 +5,8 @@ import Footer from "@/components/UI/footer/Footer";
 import "./globals.scss";
 
 export const metadata: Metadata = {
-   title: "Tarot",
-   description: "Tarot App",
+   title: "Магический круг Таро",
+   description: "Раскройте тайны будущего и найдите ответы на важные вопросы",
 };
 
 const inter = Inter({

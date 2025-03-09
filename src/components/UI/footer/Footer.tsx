@@ -4,6 +4,7 @@ import Button from "../button/Button";
 import Link from "next/link";
 import Image from "next/image";
 import SmoothScrollLink from "../smooth-scroll-link/SmoothScrollLink";
+import { links } from "@/constants/links";
 
 const Footer = () => {
    return (
@@ -53,7 +54,7 @@ const Footer = () => {
                </nav>
                <div className={styles.links}>
                   <div className={styles.link}>
-                     <Link href="/">
+                     <Link href={links.tgChannel}>
                         <Image
                            src="/svg/tg.svg"
                            width={24}
@@ -63,7 +64,7 @@ const Footer = () => {
                      </Link>
                   </div>
                   <div className={styles.link}>
-                     <Link href="/">
+                     <Link href={links.tgChannel}>
                         <Image
                            src="/svg/whatsapp.svg"
                            width={24}
