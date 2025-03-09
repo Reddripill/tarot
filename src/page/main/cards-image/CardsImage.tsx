@@ -7,7 +7,7 @@ const CardsImage = () => {
       <div className={styles.img}>
          <div className={styles["img-wrapper"]}>
             <Image
-               src="/tarot-cards.png"
+               src="/tarot-cards.webp"
                width={480}
                height={350}
                alt="Tarot Cards"

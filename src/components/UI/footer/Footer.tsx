@@ -22,7 +22,9 @@ const Footer = () => {
                   жизненных вопросах, найти ответы и выбрать верный путь.
                </h5>
                <div className={styles.button}>
-                  <Button isLarge={true}>Записаться на расклад</Button>
+                  <Link href={links.tgChannel}>
+                     <Button isLarge={true}>Записаться на расклад</Button>
+                  </Link>
                </div>
                <h5 className={styles.brand}>Designed by TechGen Inc.</h5>
             </div>

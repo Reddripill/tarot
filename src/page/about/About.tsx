@@ -18,7 +18,7 @@ const About = () => {
                <div className={styles.image}>
                   <div className={styles["image-wrapper"]}>
                      <Image
-                        src="/person.jpg"
+                        src="/person.webp"
                         alt="Elena's Phot"
                         fill
                         style={{ objectFit: "cover" }}
@@ -45,7 +45,7 @@ const About = () => {
                   <div className={styles.decoration}>
                      <div className={styles["decoration-wrapper"]}>
                         <Image
-                           src="/tarot-circle.png"
+                           src="/tarot-circle.webp"
                            width={280}
                            height={280}
                            alt="Картинка зодиального круга"

@@ -32,7 +32,7 @@ const Main = () => {
             </div>
          </div>
          <Image
-            src="/mainBg.jpg"
+            src="/mainBg.webp"
             alt="Cosmos Pic"
             fill
             priority
