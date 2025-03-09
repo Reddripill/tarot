@@ -21,7 +21,10 @@
    @apply flex items-start md:gap-x-5 gap-x-3 md:mb-6 mb-4;
 }
 .avatar {
-   @apply md:size-[55px] size-10 rounded-full bg-white/80;
+   @apply md:size-[55px] size-10 rounded-full overflow-hidden;
+   & > img {
+      @apply w-full h-full;
+   }
 }
 .name {
    @apply md:text-base text-sm md:pb-[6px] pb-1;

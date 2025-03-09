@@ -7,6 +7,7 @@ import { SwiperSlide } from "swiper/react";
 import Stars from "@/components/UI/stars/Stars";
 import { sectionHashes } from "@/constants/sectionHashes";
 import cn from "classnames";
+import Image from "next/image";
 
 const Reviews = () => {
    return (
@@ -24,7 +25,14 @@ const Reviews = () => {
                      <SwiperSlide key={review.text}>
                         <div className={styles["slide-item"]}>
                            <div className={styles["slide-top"]}>
-                              <div className={styles.avatar}></div>
+                              <div className={styles.avatar}>
+                                 <Image
+                                    src={review.avatar}
+                                    alt={review.name}
+                                    height={55}
+                                    width={55}
+                                 />
+                              </div>
                               <div className={styles.person}>
                                  <div className={styles.name}>
                                     {review.name}
