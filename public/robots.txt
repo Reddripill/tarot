@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elena-tarot.ru/sitemap.xml

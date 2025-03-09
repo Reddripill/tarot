@@ -17,7 +17,10 @@ const Main = () => {
                   </h2>
                   <h4 className={styles.text}>
                      Таро – инструмент диагностики и путеводитель на вашем
-                     жизненном пути.
+                     жизненном пути. Откройте тайны судьбы с помощью карт Таро!
+                     Точные расклады и глубокий анализ помогут вам найти ответы
+                     на важные вопросы, разобраться в чувствах и принять верные
+                     решения.
                   </h4>
                   <Link href={links.tgChannel}>
                      <button type="button" className={styles.button}>
@@ -33,7 +36,7 @@ const Main = () => {
          </div>
          <Image
             src="/mainBg.webp"
-            alt="Cosmos Pic"
+            alt="Упорядочное расположение звезд на небосводе"
             fill
             priority
             className={styles["main-bg"]}

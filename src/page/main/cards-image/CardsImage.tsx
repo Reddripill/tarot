@@ -10,7 +10,7 @@ const CardsImage = () => {
                src="/tarot-cards.webp"
                width={480}
                height={350}
-               alt="Tarot Cards"
+               alt="Карты Таро по которым определяют судьбу"
             />
          </div>
          <div className={styles.gradient} />

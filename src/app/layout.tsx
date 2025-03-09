@@ -3,10 +3,16 @@ import { Inter } from "next/font/google";
 import Header from "@/components/UI/header/Header";
 import Footer from "@/components/UI/footer/Footer";
 import "./globals.scss";
+import { keywords } from "@/constants/keywords";
 
 export const metadata: Metadata = {
    title: "Магический круг Таро",
-   description: "Раскройте тайны будущего и найдите ответы на важные вопросы",
+   description: `Что такое Таро? Где записаться на разбор Таро? Елена разберет вашу натальную карту. 
+      Раскройте тайны будущего и найдите ответы на важные вопросы.`,
+   icons: {
+      icon: "/favicon.ico",
+   },
+   keywords: keywords,
 };
 
 const inter = Inter({

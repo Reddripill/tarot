@@ -19,7 +19,7 @@ const About = () => {
                   <div className={styles["image-wrapper"]}>
                      <Image
                         src="/person.webp"
-                        alt="Elena's Phot"
+                        alt="Елена - профессиональный таролог"
                         fill
                         style={{ objectFit: "cover" }}
                      />
@@ -48,7 +48,7 @@ const About = () => {
                            src="/tarot-circle.webp"
                            width={280}
                            height={280}
-                           alt="Картинка зодиального круга"
+                           alt="Круг со знаками зодиака"
                         />
                         <div className={styles["small-gradient"]}></div>
                      </div>

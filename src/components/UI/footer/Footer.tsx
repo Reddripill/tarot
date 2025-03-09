@@ -61,7 +61,7 @@ const Footer = () => {
                            src="/svg/tg.svg"
                            width={24}
                            height={24}
-                           alt="Tg icon"
+                           alt="Связь по Telegram(Телеграм)"
                         />
                      </Link>
                   </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                            src="/svg/whatsapp.svg"
                            width={24}
                            height={24}
-                           alt="Whatsapp icon"
+                           alt="Связь по WhatsApp"
                         />
                      </Link>
                   </div>
