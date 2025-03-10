@@ -2,7 +2,7 @@
    @apply md:min-h-20 min-h-14 w-full;
 }
 .wrapper {
-   @apply fixed top-0 left-0 right-0 w-full h-28 z-[20];
+   @apply fixed top-0 left-0 right-0 w-full h-28 z-[20] box-border overflow-hidden;
 }
 .content {
    @apply flex items-center justify-between h-full

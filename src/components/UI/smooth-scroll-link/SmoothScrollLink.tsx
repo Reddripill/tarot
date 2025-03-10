@@ -15,7 +15,7 @@ const SmoothScrollLink = ({ hash, children, closeMenu }: IProps) => {
       if (section) {
          section.scrollIntoView({ behavior: "smooth" });
       }
-      if (hash === "home") {
+      /* if (hash === "home") {
          document.body.scrollTo({
             top: 0,
             left: 0,
@@ -34,7 +34,7 @@ const SmoothScrollLink = ({ hash, children, closeMenu }: IProps) => {
             top,
             behavior: "smooth",
          });
-      }
+      } */
    };
    return <div onClick={clickHanlder}>{children}</div>;
 };

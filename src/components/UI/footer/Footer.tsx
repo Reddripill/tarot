@@ -5,10 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import SmoothScrollLink from "../smooth-scroll-link/SmoothScrollLink";
 import { links } from "@/constants/links";
+import { sectionHashes } from "@/constants/sectionHashes";
 
 const Footer = () => {
    return (
-      <footer className={styles.footer}>
+      <footer className={styles.footer} id={sectionHashes.contacts}>
          <div className="container">
             <div className={styles.info}>
                <div className={styles.subtitle}>

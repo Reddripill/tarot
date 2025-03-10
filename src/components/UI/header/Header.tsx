@@ -8,6 +8,7 @@ import { useIntersectionObs } from "@/hooks/useIntersectionObs";
 import SmoothScrollLink from "../smooth-scroll-link/SmoothScrollLink";
 import { links } from "@/constants/links";
 import Image from "next/image";
+import { sectionHashes } from "@/constants/sectionHashes";
 
 const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,7 @@ const Header = () => {
       if (isOpen) setIsOpen(false);
    };
    return (
-      <header className={styles.header} ref={headerRef}>
+      <header className={styles.header} ref={headerRef} id={sectionHashes.home}>
          <div
             ref={wrapperRef}
             className={cn(styles.wrapper, {

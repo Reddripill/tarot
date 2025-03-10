@@ -5,7 +5,7 @@
 html,
 body {
    @apply h-full w-full font-inter text-white bg-main
-   overflow-x-hidden max-w-full;
+   max-w-full box-border;
 }
 body._lock-scroll {
    @apply overflow-hidden;
