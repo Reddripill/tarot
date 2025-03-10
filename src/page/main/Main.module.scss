@@ -10,7 +10,7 @@
    @apply basis-[60%] grow-0 lg:pl-16 md:pl-5;
 }
 .title {
-   @apply md:mb-8 mb-4 leading-normal #{!important};
+   @apply md:mb-8 mb-4 font-bold leading-normal #{!important};
 }
 .text {
    @apply md:mb-16 mb-8 md:leading-8 leading-6 #{!important};

@@ -9,12 +9,9 @@ interface IProps {
 
 const Button = ({ children, isLarge }: IProps) => {
    return (
-      <button
-         type="button"
-         className={cn(styles.button, { [styles["button-large"]]: isLarge })}
-      >
+      <div className={cn(styles.button, { [styles["button-large"]]: isLarge })}>
          {children}
-      </button>
+      </div>
    );
 };
 

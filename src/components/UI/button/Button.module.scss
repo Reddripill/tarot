@@ -1,7 +1,8 @@
 .button {
    @apply md:h-12 h-8 bg-accent rounded-[30px] md:px-6 px-4 shadow-button
    font-medium text-black transition-colors md:text-base text-sm
-   border-2 border-accent hover:bg-transparent hover:text-accent;
+   border-2 border-accent hover:bg-transparent hover:text-accent
+   cursor-pointer select-none inline-flex justify-center items-center;
 }
 .button-large {
    @apply md:h-[60px] h-12;
