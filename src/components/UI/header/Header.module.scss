@@ -10,7 +10,11 @@
 }
 
 .logo {
-   @apply relative z-[25] font-bold md:text-3xl text-2xl uppercase text-accent;
+   /* @apply relative z-[25] font-bold md:text-3xl text-2xl uppercase text-accent; */
+   @apply relative z-[25];
+   & > img {
+      @apply md:translate-y-1 translate-y-[2px] max-h-full max-w-[150px] transition-all;
+   }
 }
 .nav {
    @apply md:flex-grow md:flex md:justify-center;
@@ -60,6 +64,9 @@
    .wrapper {
       @apply bg-main h-14 shadow-header;
    }
+   .logo > img {
+      @apply max-h-[48px] max-w-[110px];
+   }
    .wrapper::before {
       @apply content-[""] fixed w-full top-0 shadow-header
       -left-full h-14 z-[25] transition-all bg-main;
@@ -92,5 +99,8 @@
    }
    .wrapper._label {
       @apply bg-main h-20 shadow-header;
+      & .logo > img {
+         @apply max-h-[54px] max-w-[130px];
+      }
    }
 }

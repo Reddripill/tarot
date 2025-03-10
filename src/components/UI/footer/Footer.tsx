@@ -29,9 +29,14 @@ const Footer = () => {
                <h5 className={styles.brand}>Designed by TechGen Inc.</h5>
             </div>
             <div className={styles.refs}>
-               <Link href="/" className={styles.logo}>
-                  Tarot
-               </Link>
+               <div className={styles.logo}>
+                  <Image
+                     src="/logo.webp"
+                     alt="Магический круг Таро"
+                     height={65}
+                     width={150}
+                  />
+               </div>
                <nav className={styles.nav}>
                   <ul className={styles.menu}>
                      <li className={styles["menu-item"]}>

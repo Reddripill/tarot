@@ -7,6 +7,7 @@ import cn from "classnames";
 import { useIntersectionObs } from "@/hooks/useIntersectionObs";
 import SmoothScrollLink from "../smooth-scroll-link/SmoothScrollLink";
 import { links } from "@/constants/links";
+import Image from "next/image";
 
 const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +39,12 @@ const Header = () => {
             <div className="container">
                <div className={styles.content}>
                   <Link href="/" className={styles.logo}>
-                     Tarot
+                     <Image
+                        src="/logo.webp"
+                        alt="Магический круг Таро"
+                        height={65}
+                        width={150}
+                     />
                   </Link>
                   <nav
                      className={cn(styles.nav, {
