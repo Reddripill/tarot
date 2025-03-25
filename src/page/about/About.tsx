@@ -45,9 +45,9 @@ const About = () => {
                   <div className={styles.decoration}>
                      <div className={styles["decoration-wrapper"]}>
                         <Image
-                           src="/tarot-circle.webp"
-                           width={280}
-                           height={280}
+                           src="/hands.webp"
+                           width={310}
+                           height={310}
                            alt="Круг со знаками зодиака"
                         />
                         <div className={styles["small-gradient"]}></div>

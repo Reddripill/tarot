@@ -49,11 +49,11 @@
 .decoration-wrapper {
    @apply relative;
    & img {
-      @apply relative z-[3];
+      @apply pt-8 relative z-[3];
    }
 }
 .small-gradient {
-   @apply absolute top-0 -right-1/2 w-[150%] h-[150%] z-[2] opacity-50
+   @apply absolute -top-1/4 -right-1/3 w-[150%] h-[150%] z-[2] opacity-50
    bg-[radial-gradient(ellipse_closest-side,_#4727D8_0%,_rgba(0,0,0,0)_100%)];
 }
 
