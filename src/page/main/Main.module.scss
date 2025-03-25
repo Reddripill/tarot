@@ -16,9 +16,9 @@
    @apply md:mb-16 mb-8 md:leading-8 leading-6 #{!important};
 }
 .button {
-   @apply flex items-center gap-x-4 md:min-w-[150px] min-w-[100px]
+   @apply inline-flex items-center gap-x-4 md:min-w-[150px] min-w-[100px]
    md:px-6 px-3 md:h-14 h-12 bg-accent text-black transition-colors box-border
-   border-2 border-accent;
+   border-2 border-accent cursor-pointer select-none;
 }
 .button:hover {
    @apply bg-transparent;

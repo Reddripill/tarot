@@ -23,12 +23,12 @@ const Main = () => {
                      решения.
                   </h4>
                   <Link href={links.tgChannel}>
-                     <button type="button" className={styles.button}>
+                     <div className={styles.button}>
                         <div className={styles["button-text"]}>Записаться</div>
                         <div className={styles["button-icon"]}>
                            <MoveRight />
                         </div>
-                     </button>
+                     </div>
                   </Link>
                </div>
                <CardsImage />
